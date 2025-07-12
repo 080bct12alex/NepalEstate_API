@@ -21,7 +21,8 @@ def load_model():
 
 @app.route('/', methods=['GET'])
 def index():
-    return "NepalEstate backend is running!"
+    return jsonify({"message": "NepalEstate backend is running!"})
+
 
 @app.route('/api/predict', methods=['POST'])
 def predict():
